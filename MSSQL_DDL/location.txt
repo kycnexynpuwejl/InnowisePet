@@ -1,0 +1,13 @@
+create table location
+(
+    city varchar(50),
+    id   uniqueidentifier not null
+        constraint location_pk
+            primary key
+)
+go
+
+create unique index location_id_uindex
+    on location (id)
+go
+

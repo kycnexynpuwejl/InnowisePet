@@ -1,0 +1,19 @@
+create table product_storage
+(
+    id         uniqueidentifier not null
+        constraint product_storage_pk
+            primary key,
+    storage_id uniqueidentifier
+        constraint product_storage_storage__fk
+            references storage,
+    product_id uniqueidentifier
+        constraint product_storage_product__fk
+            references product,
+    quantity   int
+)
+go
+
+create unique index product_storage_id_uindex
+    on product_storage (id)
+go
+

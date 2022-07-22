@@ -1,0 +1,1 @@
+docker run --rm -d --name RabbitMQ_container -p 15691:15691/tcp -p 15692:15692/tcp -p 25672:25672/tcp -p 4369:4369/tcp -p 5671:5671/tcp -p 5672:5672/tcp rabbitmq:latest

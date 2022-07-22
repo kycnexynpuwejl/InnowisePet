@@ -1,0 +1,13 @@
+create table category
+(
+    title varchar(50)      not null,
+    id    uniqueidentifier not null
+        constraint category_pk
+            primary key
+)
+go
+
+create unique index category_id_uindex
+    on category (id)
+go
+

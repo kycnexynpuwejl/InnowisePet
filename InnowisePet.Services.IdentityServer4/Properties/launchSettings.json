@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "InnowisePet.IdentityServer4": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:7000;http://localhost:5000",
+      "dotnetRunMessages": true
+    }
+  }
+}
